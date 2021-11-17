@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>DIY Blog Home</h1>
+
+<p>Welcome to <em>DIY Blog</em>, a very basic Django blogging website developed as an <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/django_assessment_blog">assessment task</a> for the Django learning module on the Mozilla Developer Network.</p>
+<p>
+<ul>
+    <li><strong>Blogs:</strong> {{ num_blogs }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+    <li><strong>Comments</strong> {{ num_comments }}</li>
+  </ul>
+</p>
+<h2>Blog Mission</h2>
+<p><strong>TappDrills Sports: A blog for informed sports fans.</strong></p>
+
+<div> 
+{% load static %}
+<img src="https://ewscripps.brightspotcdn.com/07/78/eaf73dc14275b4584356f29a6fed/ap21298669896294.jpg" alt="My Image" width="500" height="auto" </>
+</div>  
+{% endblock %}
